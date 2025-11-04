@@ -1735,10 +1735,9 @@ export default function App() {
       </div>
 
 
-{/* --- "BUY ME A COFFEE" LINK --- */}
+{/* --- "BUY ME A COFFEE" LINK (MOVED TO THE CORRECT LOCATION) --- */}
         <div className="mt-12"> 
           <a
-            // --- FIXED THE URL ---
             href="https://buymeacoffee.com/dt8rsh4ykxz" 
             target="_blank"
             rel="noopener noreferrer"
@@ -1747,7 +1746,6 @@ export default function App() {
             Like this app? Support its development! ☕
           </a>
         </div>
-
 
 
       
