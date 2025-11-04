@@ -1748,7 +1748,7 @@ export default function App() {
 <div className="mt-12"> 
   <a
     // --- !!! IMPORTANT: CHANGE THIS URL !!! ---
-    href="buymeacoffee.com/dt8rsh4ykxz" 
+    href="https://buymeacoffee.com/dt8rsh4ykxz" 
     target="_blank"
     rel="noopener noreferrer"
     className="block w-full p-4 bg-gray-800 border border-gray-700 rounded-lg text-center text-gray-300 font-medium hover:bg-gray-700 transition-colors"
