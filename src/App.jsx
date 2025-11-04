@@ -1426,21 +1426,12 @@ export default function App() {
         <h1 className="text-3xl font-bold mb-6 text-white">Your Progress</h1>
 
         {/* --- DYNAMIC Per-Instrument & Total Hours --- */}
-          <div className="grid grid-cols-3 gap-3 mb-8">
-    {Object.keys(instrumentFamilies).map(family => {
-      // ... (some code here) ...
-      return (
-        <div key={family} className="bg-gray-900 border border-gray-800 rounded-lg p-3 text-center">
-          {/* --- CHANGED --- */}
-          <span className="text-xs sm:text-sm font-medium text-sky-400 block uppercase tracking-wider">{family}</span>
-          {/* --- CHANGED --- */}
-          <span className="text-xl sm:text-2xl font-bold text-white block mt-1">{familyHours}</span>
-  
-          <span className="text-xs text-gray-400 block">hours</span>
-        </div>
-      );
-    })}
-  </div>
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <div className="bg-gray-900 border border-gray-700 rounded-lg p-4 text-center">
+            <span className="text-sm font-medium text-sky-400 block uppercase tracking-wider">Total Time</span>
+            <span className="text-4xl font-bold text-white block mt-1">{practiceTimes.total}</span>
+            <span className="text-sm text-gray-400 block">hours</span>
+          </div>
           
           {/* --- NEW: Practice Streak --- */}
           <div className="bg-gray-900 border border-gray-700 rounded-lg p-4 text-center">
