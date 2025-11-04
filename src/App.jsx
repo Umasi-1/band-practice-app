@@ -1735,19 +1735,18 @@ export default function App() {
       </div>
 
 
-{/* --- ADD THIS NEW SECTION --- */}
-<div className="mt-12"> 
-  <a
-    // --- !!! IMPORTANT: CHANGE THIS URL !!! ---
-    href="https://buymeacoffee.com/dt8rsh4ykxz" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block w-full p-4 bg-gray-800 border border-gray-700 rounded-lg text-center text-gray-300 font-medium hover:bg-gray-700 transition-colors"
-  >
-    Like this app? Support its development! ☕
-  </a>
-</div>
-{/* --- END OF NEW SECTION --- */}
+{/* --- "BUY ME A COFFEE" LINK --- */}
+        <div className="mt-12"> 
+          <a
+            // --- FIXED THE URL ---
+            href="https://buymeacoffee.com/dt8rsh4ykxz" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full p-4 bg-gray-800 border border-gray-700 rounded-lg text-center text-gray-300 font-medium hover:bg-gray-700 transition-colors"
+          >
+            Like this app? Support its development! ☕
+          </a>
+        </div>
 
 
 
