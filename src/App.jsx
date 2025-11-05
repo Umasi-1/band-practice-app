@@ -1172,7 +1172,7 @@ export default function App() {
             Like this app? Support its development! ☕
           </a>
           {/* NEW: Explanatory text for mobile 404 issue */}
-          <p className="text-xs text-gray-500 text-center mt-2">(May require opening in your phone's browser)</p>
+          <p className="text-xs text-gray-500 text-center mt-2">(May require opening in your phone's browser, like Safari, lol)</p>
         </div>
         
       </div>
