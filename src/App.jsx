@@ -1161,7 +1161,7 @@ export default function App() {
           Start Practice
         </button>
         
-        {/* --- "BUY ME A COFFEE" LINK (MOVED HERE) --- */}
+        {/* --- "BUY ME A COFFEE" LINK --- */}
         <div className="mt-12">
           <a
             href="https://buymeacoffee.com/dt8rsh4ykxz"
@@ -1171,6 +1171,8 @@ export default function App() {
           >
             Like this app? Support its development! ☕
           </a>
+          {/* NEW: Explanatory text for mobile 404 issue */}
+          <p className="text-xs text-gray-500 text-center mt-2">(May require opening in your phone's browser)</p>
         </div>
         
       </div>
@@ -1303,7 +1305,7 @@ export default function App() {
           </div>
         )}
 
-        {/* --- "BUY ME A COFFEE" LINK (MOVED HERE) --- */}
+        {/* --- "BUY ME A COFFEE" LINK --- */}
         <div className="mt-12">
           <a
             href="https://buymeacoffee.com/dt8rsh4ykxz"
@@ -1313,6 +1315,8 @@ export default function App() {
           >
             Like this app? Support its development! ☕
           </a>
+          {/* NEW: Explanatory text for mobile 404 issue */}
+          <p className="text-xs text-gray-500 text-center mt-2">(May require opening in your phone's browser)</p>
         </div>
       </div>
     );
@@ -1475,8 +1479,8 @@ export default function App() {
             const familyHours = familyInstruments.reduce((sum, instr) => sum + parseFloat(practiceTimes[instr.id] || 0), 0).toFixed(1);
             return (
               <div key={family} className="bg-gray-900 border border-gray-800 rounded-lg p-3 text-center min-w-0">
-                {/* STYLING FIX: Applied text-[0.7rem] and break-all */}
-                <span className="text-[0.65rem] font-medium text-sky-400 block uppercase tracking-wider break-all leading-tight">{family}</span>
+                {/* STYLING FIX: Applied text-xs and break-words. (text-[0.65rem] was too small) */}
+                <span className="text-xs font-medium text-sky-400 block uppercase tracking-wider break-words">{family}</span>
                 <span className="text-2xl font-bold text-white block mt-1">{familyHours}</span>
                 <span className="text-xs text-gray-400 block">hours</span>
               </div>
@@ -1548,7 +1552,7 @@ export default function App() {
           </div>
         </div>
 
-        {/* --- "BUY ME A COFFEE" LINK (MOVED HERE) --- */}
+        {/* --- "BUY ME A COFFEE" LINK --- */}
         <div className="mt-12">
           <a
             href="https://buymeacoffee.com/dt8rsh4ykxz"
@@ -1558,6 +1562,8 @@ export default function App() {
           >
             Like this app? Support its development! ☕
           </a>
+          {/* NEW: Explanatory text for mobile 404 issue */}
+          <p className="text-xs text-gray-500 text-center mt-2">(May require opening in your phone's browser)</p>
         </div>
 
       </div>
@@ -1711,7 +1717,7 @@ export default function App() {
         {trainingMode === 'pitch' && renderPitchTrainer()}
         {trainingMode === 'rhythm' && renderRhythmTrainer()}
         
-        {/* --- "BUY ME A COFFEE" LINK (MOVED HERE) --- */}
+        {/* --- "BUY ME A COFFEE" LINK --- */}
         <div className="mt-12">
           <a
             href="https://buymeacoffee.com/dt8rsh4ykxz"
@@ -1721,6 +1727,8 @@ export default function App() {
           >
             Like this app? Support its development! ☕
           </a>
+          {/* NEW: Explanatory text for mobile 404 issue */}
+          <p className="text-xs text-gray-500 text-center mt-2">(May require opening in your phone's browser)</p>
         </div>
 
       </div>
