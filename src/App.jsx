@@ -1160,6 +1160,19 @@ export default function App() {
           <Play className="w-5 h-5 mr-2" />
           Start Practice
         </button>
+        
+        {/* --- "BUY ME A COFFEE" LINK (MOVED HERE) --- */}
+        <div className="mt-12">
+          <a
+            href="https://buymeacoffee.com/dt8rsh4ykxz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full p-4 bg-gray-800 border border-gray-700 rounded-lg text-center text-gray-300 font-medium hover:bg-gray-700 transition-colors"
+          >
+            Like this app? Support its development! ☕
+          </a>
+        </div>
+        
       </div>
     );
   };
@@ -1289,6 +1302,18 @@ export default function App() {
             </button>
           </div>
         )}
+
+        {/* --- "BUY ME A COFFEE" LINK (MOVED HERE) --- */}
+        <div className="mt-12">
+          <a
+            href="https://buymeacoffee.com/dt8rsh4ykxz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full p-4 bg-gray-800 border border-gray-700 rounded-lg text-center text-gray-300 font-medium hover:bg-gray-700 transition-colors"
+          >
+            Like this app? Support its development! ☕
+          </a>
+        </div>
       </div>
     );
   };
@@ -1449,8 +1474,9 @@ export default function App() {
             const familyInstruments = instrumentFamilies[family];
             const familyHours = familyInstruments.reduce((sum, instr) => sum + parseFloat(practiceTimes[instr.id] || 0), 0).toFixed(1);
             return (
-              <div key={family} className="bg-gray-900 border border-gray-800 rounded-lg p-3 text-center">
-                <span className="text-sm font-medium text-sky-400 block uppercase tracking-wider">{family}</span>
+              <div key={family} className="bg-gray-900 border border-gray-800 rounded-lg p-3 text-center min-w-0">
+                {/* STYLING FIX: Applied text-[0.7rem] and break-all */}
+                <span className="text-[0.7rem] font-medium text-sky-400 block uppercase tracking-wider break-all leading-tight">{family}</span>
                 <span className="text-2xl font-bold text-white block mt-1">{familyHours}</span>
                 <span className="text-xs text-gray-400 block">hours</span>
               </div>
@@ -1512,7 +1538,7 @@ export default function App() {
         </div>
 
         {/* Practice Heatmap */}
-        <div>
+        <div className="mb-12">
           <h2 className="text-lg font-semibold mb-4 text-sky-400">Practice Log (Last 35 Days)</h2>
           <p className="text-gray-400 text-sm -mt-3 mb-4">Each blue square is a day you practiced!</p>
           <div className="grid grid-cols-7 gap-2">
@@ -1521,12 +1547,25 @@ export default function App() {
             ))}
           </div>
         </div>
+
+        {/* --- "BUY ME A COFFEE" LINK (MOVED HERE) --- */}
+        <div className="mt-12">
+          <a
+            href="https://buymeacoffee.com/dt8rsh4ykxz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full p-4 bg-gray-800 border border-gray-700 rounded-lg text-center text-gray-300 font-medium hover:bg-gray-700 transition-colors"
+          >
+            Like this app? Support its development! ☕
+          </a>
+        </div>
+
       </div>
     );
   };
 
   // --- Training Screen (NEW STRUCTURE) ---
-  const renderIntervalTrainer = () => { /* ... (unchanged) ... */
+  const renderIntervalTrainer = () => {
     if (!intervalQuestion) return null; // Wait for question
     return (
       <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-700 mb-6 text-center">
@@ -1561,7 +1600,7 @@ export default function App() {
     );
   };
 
-  const renderPitchTrainer = () => { /* ... (unchanged) ... */
+  const renderPitchTrainer = () => {
     if (!pitchQuestion) return null; // Wait for question
     return (
       <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-700 mb-6 text-center">
@@ -1671,6 +1710,18 @@ export default function App() {
         {trainingMode === 'intervals' && renderIntervalTrainer()}
         {trainingMode === 'pitch' && renderPitchTrainer()}
         {trainingMode === 'rhythm' && renderRhythmTrainer()}
+        
+        {/* --- "BUY ME A COFFEE" LINK (MOVED HERE) --- */}
+        <div className="mt-12">
+          <a
+            href="https://buymeacoffee.com/dt8rsh4ykxz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full p-4 bg-gray-800 border border-gray-700 rounded-lg text-center text-gray-300 font-medium hover:bg-gray-700 transition-colors"
+          >
+            Like this app? Support its development! ☕
+          </a>
+        </div>
 
       </div>
     );
@@ -1733,23 +1784,6 @@ export default function App() {
           </button>
         </div>
       </div>
-
-
-{/* --- "BUY ME A COFFEE" LINK (MOVED TO THE CORRECT LOCATION) --- */}
-        <div className="mt-12"> 
-          <a
-            href="https://buymeacoffee.com/dt8rsh4ykxz" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full p-4 bg-gray-800 border border-gray-700 rounded-lg text-center text-gray-300 font-medium hover:bg-gray-700 transition-colors"
-          >
-            Like this app? Support its development! ☕
-          </a>
-        </div>
-
-
-      
     </div>
   );
 }
-
