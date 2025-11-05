@@ -1476,7 +1476,7 @@ export default function App() {
             return (
               <div key={family} className="bg-gray-900 border border-gray-800 rounded-lg p-3 text-center min-w-0">
                 {/* STYLING FIX: Applied text-[0.7rem] and break-all */}
-                <span className="text-[0.7rem] font-medium text-sky-400 block uppercase tracking-wider break-all leading-tight">{family}</span>
+                <span className="text-[0.65rem] font-medium text-sky-400 block uppercase tracking-wider break-all leading-tight">{family}</span>
                 <span className="text-2xl font-bold text-white block mt-1">{familyHours}</span>
                 <span className="text-xs text-gray-400 block">hours</span>
               </div>
