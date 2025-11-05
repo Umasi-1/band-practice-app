@@ -1479,8 +1479,8 @@ export default function App() {
             const familyHours = familyInstruments.reduce((sum, instr) => sum + parseFloat(practiceTimes[instr.id] || 0), 0).toFixed(1);
             return (
               <div key={family} className="bg-gray-900 border border-gray-800 rounded-lg p-3 text-center min-w-0">
-                {/* STYLING FIX: Applied text-xs and break-words. (text-[0.65rem] was too small) */}
-                <span className="text-xs font-medium text-sky-400 block uppercase tracking-wider break-words">{family}</span>
+                {/* STYLING FIX: Using text-[0.7rem] (11.2px) to prevent ugly wrapping */}
+                <span className="text-[0.7rem] font-medium text-sky-400 block uppercase tracking-wider">{family}</span>
                 <span className="text-2xl font-bold text-white block mt-1">{familyHours}</span>
                 <span className="text-xs text-gray-400 block">hours</span>
               </div>
